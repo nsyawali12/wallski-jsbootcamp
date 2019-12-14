@@ -205,3 +205,103 @@ if (age < 13) {
 } else {
     console.log(firstName + ' is a man. ');
 }
+
+/********************
+ *  The Ternary Operator and Switch
+ */
+
+var firstName = 'John';
+var age = 14;
+
+//Ternary operator
+age >= 18 ?
+    console.log(firstName + 'drinks beer. ') : console.log(firstName + 'drink juice.');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+/** (if (age >= 18){
+ *     var drink = 'beer';
+ * } else {
+ *     var drink = 'juice;
+ * }) */
+
+// Switch Statement
+var job = 'cop';
+switch (job) {
+    case 'teacher':
+        console.log(firstName + ' teaches kids how to code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives an uber in Lisbon.');
+        break;
+    case 'designer':
+        console.log(firstName + ' design beautiful websites.');
+        break;
+    default:
+        console.log(firstName + ' does something else.');
+}
+
+age = 17;
+switch (true) {
+    case age < 13:
+        console.log(firstName + ' is a boy.');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + ' is a teenager');
+        break;
+    case age >= 20 && age < 30:
+        console.log(firstName + ' is a young man');
+        break;
+    default:
+        console.log(firstName + ' is a man.');
+        break;
+}
+
+/****************
+ * Truthy and Falsy values and equality operators
+ */
+
+// falsy values: undefined, null, 0, '', NaN
+// truthy values: NOT falsy values
+
+var height;
+
+height = 23;
+
+if (height || height === 0) {
+    console.log('Variable is defined');
+} else {
+    console.log('Variable has NOT been defined');
+}
+
+// Equality operators
+if (height == '23') {
+    console.log('The == operators does type coercion!');
+}
+
+/********
+ * CODING CHALLENGE 2
+ */
+
+/**
+ * John and Mike both play basketball in different teams.
+ * In The lastest 3 games, John's team scored 89, 120 and 103 point, 
+ * while Mike's team scored 116, 94 and 123 points.
+ * 
+ * 1. Calculate the average score for each team
+ * 2. Decide which teams wins in average (highest average score),
+ * and print the winner to the console.
+ * Also include the average score in output.
+ * 3. Then change the score to show different winners. Don;t forget to take into account there might be
+ * a draw (same average score)
+ * 
+ * 4. Extra: Marry also play basketball, and her team score 97, 134 and 105 points. Like before
+ * log average winner to the console. Hint: you will need the && operator to take the decision. If you
+ * can't solve this one, just watch the solution, it's no problem
+ * 
+ * 5. Like before, change the scores to generate different winners, keeping in mind there might ne draws.
+ * 
+ *Goodluck
+ * 
+ */
