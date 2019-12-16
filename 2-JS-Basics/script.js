@@ -305,3 +305,46 @@ if (height == '23') {
  *Goodluck
  * 
  */
+
+var scoreJohn = (89 + 120 + 103) / 3;
+var scoreMike = (116 + 94 + 123) / 3;
+var scoreMary = (97 + 134 + 105) / 3;
+console.log(scoreJohn, scoreMike);
+
+if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
+    console.log('John team wins with ' + scoreJohn + ' Points');
+} else if (scoreMike > scoreJohn && scoreMike > scoreMary) {
+    console.log('Mike team wins with ' + scoreMike + ' Points');
+} else if (scoreMary > scoreJohn && scoreMary > scoreMike) {
+    console.log('Mary team wins with ' + scoreMary + ' Points');
+} else {
+    console.log('There is a draw');
+}
+
+/***********
+ * FUNCTION
+ */
+
+function calculateAge(birthYear) {
+    return 2018 - birthYear;
+}
+
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+console.log(ageJohn, ageMike, ageJane);
+
+function yearsUntilRetirement(year, firstName) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years')
+    } else {
+        console.log(firstName + ' is Already Retired.');
+    }
+}
+
+yearsUntilRetirement(1990, 'Lake');
+yearsUntilRetirement(1948, 'Mike');
+yearsUntilRetirement(1969, 'Jane');
