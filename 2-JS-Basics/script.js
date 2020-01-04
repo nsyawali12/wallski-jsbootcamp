@@ -405,3 +405,25 @@ console.log(john.indexOf(23));
 var isDesigner = john.indexOf('designer') === -1 ?
     'John is Not a Designer' : 'John Is a Designer';
 console.log(isDesigner);
+
+/***************
+ * CODING CHALLENGE
+ */
+
+/**
+ * John and his family went on a holiday and went to 3 different restaurantns.
+ * The bills were $123, $48 and $268.
+ * 
+ * To tip the waiter a fair amount, john created a simple tip calculator (as a function).
+ * He likes to tip 20% of the bill when the bill is less than $50, 15% when the bill is between
+ * $ 50 and $200.
+ * 
+ * in the end, john would like to have 2 arrays:
+ * 1) Containing all three tips (one for each bill)
+ * 2) Containing all three final paid amount (bill + tip).
+ * 
+ * (NOTE: To calculate 20% of a value, simply multiply if with 20/100 = 0.2)
+ * 
+ * GOODLUCK 
+ * 
+ */
